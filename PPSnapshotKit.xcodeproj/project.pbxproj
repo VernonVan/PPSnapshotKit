@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD1A194D20C27930000270FB /* PPSnapshootHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194120C27930000270FB /* PPSnapshootHandler.m */; };
+		AD1A194E20C27930000270FB /* PPSnapshootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194220C27930000270FB /* PPSnapshootViewController.m */; };
+		AD1A194F20C27930000270FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1A194520C27930000270FB /* Assets.xcassets */; };
+		AD1A195020C27930000270FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1A194620C27930000270FB /* LaunchScreen.storyboard */; };
+		AD1A195120C27930000270FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194820C27930000270FB /* main.m */; };
+		AD1A195220C27930000270FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194920C27930000270FB /* AppDelegate.m */; };
+		AD1A195320C27930000270FB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD1A194A20C27930000270FB /* Info.plist */; };
+		AD1A195420C27930000270FB /* PPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194B20C27930000270FB /* PPMainViewController.m */; };
+		AD1A195520C27930000270FB /* PPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194C20C27930000270FB /* PPImageViewController.m */; };
+		AD1A195B20C27996000270FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1A195920C27996000270FB /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD1A192320C27903000270FB /* PPSnapshotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPSnapshotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1A193C20C27930000270FB /* PPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMainViewController.h; sourceTree = "<group>"; };
+		AD1A193D20C27930000270FB /* PPSnapshootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSnapshootViewController.h; sourceTree = "<group>"; };
+		AD1A193E20C27930000270FB /* PPImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPImageViewController.h; sourceTree = "<group>"; };
+		AD1A194020C27930000270FB /* PPSnapshootHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSnapshootHandler.h; sourceTree = "<group>"; };
+		AD1A194120C27930000270FB /* PPSnapshootHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSnapshootHandler.m; sourceTree = "<group>"; };
+		AD1A194220C27930000270FB /* PPSnapshootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSnapshootViewController.m; sourceTree = "<group>"; };
+		AD1A194420C27930000270FB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD1A194520C27930000270FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD1A194720C27930000270FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD1A194820C27930000270FB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD1A194920C27930000270FB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD1A194A20C27930000270FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD1A194B20C27930000270FB /* PPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMainViewController.m; sourceTree = "<group>"; };
+		AD1A194C20C27930000270FB /* PPImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPImageViewController.m; sourceTree = "<group>"; };
+		AD1A195A20C27996000270FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD1A192020C27903000270FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD1A191A20C27903000270FB = {
+			isa = PBXGroup;
+			children = (
+				AD1A192520C27903000270FB /* PPSnapshotKit */,
+				AD1A192420C27903000270FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD1A192420C27903000270FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD1A192320C27903000270FB /* PPSnapshotKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD1A192520C27903000270FB /* PPSnapshotKit */ = {
+			isa = PBXGroup;
+			children = (
+				AD1A193F20C27930000270FB /* Source */,
+				AD1A195920C27996000270FB /* Main.storyboard */,
+				AD1A193C20C27930000270FB /* PPMainViewController.h */,
+				AD1A194B20C27930000270FB /* PPMainViewController.m */,
+				AD1A193D20C27930000270FB /* PPSnapshootViewController.h */,
+				AD1A194220C27930000270FB /* PPSnapshootViewController.m */,
+				AD1A193E20C27930000270FB /* PPImageViewController.h */,
+				AD1A194C20C27930000270FB /* PPImageViewController.m */,
+				AD1A194320C27930000270FB /* Others */,
+			);
+			path = PPSnapshotKit;
+			sourceTree = "<group>";
+		};
+		AD1A193F20C27930000270FB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AD1A194020C27930000270FB /* PPSnapshootHandler.h */,
+				AD1A194120C27930000270FB /* PPSnapshootHandler.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		AD1A194320C27930000270FB /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				AD1A194420C27930000270FB /* AppDelegate.h */,
+				AD1A194520C27930000270FB /* Assets.xcassets */,
+				AD1A194620C27930000270FB /* LaunchScreen.storyboard */,
+				AD1A194820C27930000270FB /* main.m */,
+				AD1A194920C27930000270FB /* AppDelegate.m */,
+				AD1A194A20C27930000270FB /* Info.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD1A192220C27903000270FB /* PPSnapshotKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1A193920C27904000270FB /* Build configuration list for PBXNativeTarget "PPSnapshotKit" */;
+			buildPhases = (
+				AD1A191F20C27903000270FB /* Sources */,
+				AD1A192020C27903000270FB /* Frameworks */,
+				AD1A192120C27903000270FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PPSnapshotKit;
+			productName = PPSnapshotKit;
+			productReference = AD1A192320C27903000270FB /* PPSnapshotKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD1A191B20C27903000270FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Vernon;
+				TargetAttributes = {
+					AD1A192220C27903000270FB = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = AD1A191E20C27903000270FB /* Build configuration list for PBXProject "PPSnapshotKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD1A191A20C27903000270FB;
+			productRefGroup = AD1A192420C27903000270FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD1A192220C27903000270FB /* PPSnapshotKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD1A192120C27903000270FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1A194F20C27930000270FB /* Assets.xcassets in Resources */,
+				AD1A195020C27930000270FB /* LaunchScreen.storyboard in Resources */,
+				AD1A195320C27930000270FB /* Info.plist in Resources */,
+				AD1A195B20C27996000270FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD1A191F20C27903000270FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1A195220C27930000270FB /* AppDelegate.m in Sources */,
+				AD1A194E20C27930000270FB /* PPSnapshootViewController.m in Sources */,
+				AD1A195420C27930000270FB /* PPMainViewController.m in Sources */,
+				AD1A195120C27930000270FB /* main.m in Sources */,
+				AD1A195520C27930000270FB /* PPImageViewController.m in Sources */,
+				AD1A194D20C27930000270FB /* PPSnapshootHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD1A194620C27930000270FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD1A194720C27930000270FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AD1A195920C27996000270FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD1A195A20C27996000270FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD1A193720C27904000270FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD1A193820C27904000270FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD1A193A20C27904000270FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6964LXMCM;
+				INFOPLIST_FILE = "$(SRCROOT)/PPSnapshotKit/Others/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.scnu.PPSnapshotKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD1A193B20C27904000270FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6964LXMCM;
+				INFOPLIST_FILE = "$(SRCROOT)/PPSnapshotKit/Others/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.scnu.PPSnapshotKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD1A191E20C27903000270FB /* Build configuration list for PBXProject "PPSnapshotKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1A193720C27904000270FB /* Debug */,
+				AD1A193820C27904000270FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1A193920C27904000270FB /* Build configuration list for PBXNativeTarget "PPSnapshotKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1A193A20C27904000270FB /* Debug */,
+				AD1A193B20C27904000270FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD1A191B20C27903000270FB /* Project object */;
+}
