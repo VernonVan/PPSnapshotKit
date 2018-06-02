@@ -7,7 +7,7 @@
 //
 
 #import "PPMainViewController.h"
-#import "PPSnapshootViewController.h"
+#import "PPSnapshotViewController.h"
 
 @interface PPMainViewController ()
 
@@ -24,13 +24,13 @@
 {
     [super prepareForSegue:segue sender:sender];
 
-    PPSnapshootViewController *snapshootViewController = segue.destinationViewController;
+    PPSnapshotViewController *snapshotViewController = segue.destinationViewController;
     if ([segue.identifier isEqualToString:@"scrollView"]) {
-        snapshootViewController.type = PPSnapshootViewControllerTypeScrollView;
+        snapshotViewController.type = PPSnapshotViewControllerTypeScrollView;
     } else if ([segue.identifier isEqualToString:@"wkwebView"]) {
-        snapshootViewController.type = PPSnapshootViewControllerTypeWKWebView;
+        snapshotViewController.type = PPSnapshotViewControllerTypeWKWebView;
     } else if ([segue.identifier isEqualToString:@"uiwebView"]) {
-        snapshootViewController.type = PPSnapshootViewControllerTypeUIWebView;
+        snapshotViewController.type = PPSnapshotViewControllerTypeUIWebView;
     }
 }
 

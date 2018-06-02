@@ -1,38 +1,38 @@
 //
-//  PPSnapshootViewController.m
+//  PPSnapshotViewController.m
 //  PPWebCapture
 //
 //  Created by Vernon on 2018/6/1.
 //  Copyright © 2018年 Vernon. All rights reserved.
 //
 
-#import "PPSnapshootViewController.h"
+#import "PPSnapshotViewController.h"
 #import <WebKit/WebKit.h>
 #import "PPImageViewController.h"
-#import "PPSnapshootHandler.h"
+#import "PPSnapshotHandler.h"
 
-@interface PPSnapshootViewController () <PPSnapshootHandlerDelegate, UITableViewDataSource> {
-    UIImage *_snapshootImage;
+@interface PPSnapshotViewController () <PPSnapshotHandlerDelegate, UITableViewDataSource> {
+    UIImage *_snapshotImage;
 }
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIWebView *uiWebView;
 @property (nonatomic, strong) WKWebView *wkWebView;
 @end
 
-@implementation PPSnapshootViewController
+@implementation PPSnapshotViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     switch (self.type) {
-        case PPSnapshootViewControllerTypeScrollView:
+        case PPSnapshotViewControllerTypeScrollView:
             [self.view addSubview:self.tableView];
             break;
-        case PPSnapshootViewControllerTypeWKWebView:
+        case PPSnapshotViewControllerTypeWKWebView:
             [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.jianshu.com/"]]];
             break;
-        case PPSnapshootViewControllerTypeUIWebView:
+        case PPSnapshotViewControllerTypeUIWebView:
             [self.uiWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.jianshu.com/"]]];
             break;
         default:
@@ -70,17 +70,17 @@
 
 - (IBAction)captureAction:(id)sender
 {
-    PPSnapshootHandler.defaultHandler.delegate = self;
+    PPSnapshotHandler.defaultHandler.delegate = self;
 
     switch (self.type) {
-        case PPSnapshootViewControllerTypeScrollView:
-            [PPSnapshootHandler.defaultHandler snapshootForView:self.tableView];
+        case PPSnapshotViewControllerTypeScrollView:
+            [PPSnapshotHandler.defaultHandler snapshotForView:self.tableView];
             break;
-        case PPSnapshootViewControllerTypeWKWebView:
-            [PPSnapshootHandler.defaultHandler snapshootForView:self.wkWebView];
+        case PPSnapshotViewControllerTypeWKWebView:
+            [PPSnapshotHandler.defaultHandler snapshotForView:self.wkWebView];
             break;
-        case PPSnapshootViewControllerTypeUIWebView:
-            [PPSnapshootHandler.defaultHandler snapshootForView:self.uiWebView];
+        case PPSnapshotViewControllerTypeUIWebView:
+            [PPSnapshotHandler.defaultHandler snapshotForView:self.uiWebView];
             break;
         default:
             break;
@@ -92,16 +92,16 @@
     [super prepareForSegue:segue sender:sender];
 
     PPImageViewController *imageViewController = segue.destinationViewController;
-    imageViewController.image = _snapshootImage;
+    imageViewController.image = _snapshotImage;
 }
 
-#pragma mark - PPSnapshootHandlerDelegate
+#pragma mark - PPSnapshotHandlerDelegate
 
-- (void)snapshootHandler:(PPSnapshootHandler *)snapshootHandler didFinish:(UIImage *)captureImage forView:(UIView *)view
+- (void)snapshotHandler:(PPSnapshotHandler *)snapshotHandler didFinish:(UIImage *)captureImage forView:(UIView *)view
 {
-    PPSnapshootHandler.defaultHandler.delegate = nil;
+    PPSnapshotHandler.defaultHandler.delegate = nil;
 
-    _snapshootImage = captureImage;
+    _snapshotImage = captureImage;
     [self performSegueWithIdentifier:@"showImage" sender:nil];
 }
 

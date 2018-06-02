@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="881" y="134"/>
         </scene>
-        <!--Snapshoot View Controller-->
+        <!--Snapshot View Controller-->
         <scene sceneID="dsq-sV-Flv">
             <objects>
-                <viewController id="iqh-MM-e6K" customClass="PPSnapshootViewController" sceneMemberID="viewController">
+                <viewController id="iqh-MM-e6K" customClass="PPSnapshotViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="orz-Tl-YfS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

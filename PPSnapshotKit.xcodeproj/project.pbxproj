@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD1A194D20C27930000270FB /* PPSnapshootHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194120C27930000270FB /* PPSnapshootHandler.m */; };
-		AD1A194E20C27930000270FB /* PPSnapshootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194220C27930000270FB /* PPSnapshootViewController.m */; };
+		AD1A194D20C27930000270FB /* PPSnapshotHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194120C27930000270FB /* PPSnapshotHandler.m */; };
+		AD1A194E20C27930000270FB /* PPSnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194220C27930000270FB /* PPSnapshotViewController.m */; };
 		AD1A194F20C27930000270FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1A194520C27930000270FB /* Assets.xcassets */; };
 		AD1A195020C27930000270FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1A194620C27930000270FB /* LaunchScreen.storyboard */; };
 		AD1A195120C27930000270FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194820C27930000270FB /* main.m */; };
@@ -22,11 +22,11 @@
 /* Begin PBXFileReference section */
 		AD1A192320C27903000270FB /* PPSnapshotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPSnapshotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1A193C20C27930000270FB /* PPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMainViewController.h; sourceTree = "<group>"; };
-		AD1A193D20C27930000270FB /* PPSnapshootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSnapshootViewController.h; sourceTree = "<group>"; };
+		AD1A193D20C27930000270FB /* PPSnapshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSnapshotViewController.h; sourceTree = "<group>"; };
 		AD1A193E20C27930000270FB /* PPImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPImageViewController.h; sourceTree = "<group>"; };
-		AD1A194020C27930000270FB /* PPSnapshootHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSnapshootHandler.h; sourceTree = "<group>"; };
-		AD1A194120C27930000270FB /* PPSnapshootHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSnapshootHandler.m; sourceTree = "<group>"; };
-		AD1A194220C27930000270FB /* PPSnapshootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSnapshootViewController.m; sourceTree = "<group>"; };
+		AD1A194020C27930000270FB /* PPSnapshotHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSnapshotHandler.h; sourceTree = "<group>"; };
+		AD1A194120C27930000270FB /* PPSnapshotHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSnapshotHandler.m; sourceTree = "<group>"; };
+		AD1A194220C27930000270FB /* PPSnapshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSnapshotViewController.m; sourceTree = "<group>"; };
 		AD1A194420C27930000270FB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD1A194520C27930000270FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD1A194720C27930000270FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,8 +72,8 @@
 				AD1A195920C27996000270FB /* Main.storyboard */,
 				AD1A193C20C27930000270FB /* PPMainViewController.h */,
 				AD1A194B20C27930000270FB /* PPMainViewController.m */,
-				AD1A193D20C27930000270FB /* PPSnapshootViewController.h */,
-				AD1A194220C27930000270FB /* PPSnapshootViewController.m */,
+				AD1A193D20C27930000270FB /* PPSnapshotViewController.h */,
+				AD1A194220C27930000270FB /* PPSnapshotViewController.m */,
 				AD1A193E20C27930000270FB /* PPImageViewController.h */,
 				AD1A194C20C27930000270FB /* PPImageViewController.m */,
 				AD1A194320C27930000270FB /* Others */,
@@ -84,8 +84,8 @@
 		AD1A193F20C27930000270FB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				AD1A194020C27930000270FB /* PPSnapshootHandler.h */,
-				AD1A194120C27930000270FB /* PPSnapshootHandler.m */,
+				AD1A194020C27930000270FB /* PPSnapshotHandler.h */,
+				AD1A194120C27930000270FB /* PPSnapshotHandler.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -175,11 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1A195220C27930000270FB /* AppDelegate.m in Sources */,
-				AD1A194E20C27930000270FB /* PPSnapshootViewController.m in Sources */,
+				AD1A194E20C27930000270FB /* PPSnapshotViewController.m in Sources */,
 				AD1A195420C27930000270FB /* PPMainViewController.m in Sources */,
 				AD1A195120C27930000270FB /* main.m in Sources */,
 				AD1A195520C27930000270FB /* PPImageViewController.m in Sources */,
-				AD1A194D20C27930000270FB /* PPSnapshootHandler.m in Sources */,
+				AD1A194D20C27930000270FB /* PPSnapshotHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

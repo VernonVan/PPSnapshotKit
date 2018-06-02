@@ -1,37 +1,37 @@
 //
-//  PPSnapshootHandler.h
+//  PPSnapshotHandler.h
 //  PPWebCapture
 //
 //  Created by Vernon on 2018/5/30.
 //  Copyright © 2018年 Vernon. All rights reserved.
 //
 
-#import "PPSnapshootHandler.h"
+#import "PPSnapshotHandler.h"
 #import <WebKit/WebKit.h>
 
 #define DELAY_TIME_DRAW 0.1
 
-@interface PPSnapshootHandler () {
+@interface PPSnapshotHandler () {
     BOOL _isCapturing;
     UIView *_captureView;
 }
 @end
 
-@implementation PPSnapshootHandler
+@implementation PPSnapshotHandler
 
 + (instancetype)defaultHandler
 {
     static dispatch_once_t onceToken;
-    static PPSnapshootHandler *defaultHandler = nil;
+    static PPSnapshotHandler *defaultHandler = nil;
     dispatch_once(&onceToken, ^{
-        defaultHandler = [[PPSnapshootHandler alloc] init];
+        defaultHandler = [[PPSnapshotHandler alloc] init];
     });
     return defaultHandler;
 }
 
 #pragma mark - public method
 
-- (void)snapshootForView:(__kindof UIView *)view
+- (void)snapshotForView:(__kindof UIView *)view
 {
     if (!view || _isCapturing) {
         return;
@@ -40,18 +40,18 @@
     _captureView = view;
 
     if ([view isKindOfClass:[UIScrollView class]]) {
-        [self snapshootForScrollView:(UIScrollView *)view];
+        [self snapshotForScrollView:(UIScrollView *)view];
     } else if ([view isKindOfClass:[UIWebView class]]) {
         UIWebView *webView = (UIWebView *)view;
-        [self snapshootForScrollView:webView.scrollView];
+        [self snapshotForScrollView:webView.scrollView];
     } else if ([view isKindOfClass:[WKWebView class]]) {
-        [self snapshootForWKWebView:(WKWebView *)view];
+        [self snapshotForWKWebView:(WKWebView *)view];
     }
 }
 
 #pragma mark - WKWebView
 
-- (void)snapshootForWKWebView:(WKWebView *)webView
+- (void)snapshotForWKWebView:(WKWebView *)webView
 {
     UIView *snapshotView = [webView snapshotViewAfterScreenUpdates:YES];
     snapshotView.frame = webView.frame;
@@ -74,7 +74,7 @@
 
     UIGraphicsBeginImageContextWithOptions(totalSize, YES, UIScreen.mainScreen.scale);
     [self drawContentPage:containerView webView:webView index:0 maxIndex:page completion:^{
-        UIImage *snapshootImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
 
         [webView removeFromSuperview];
@@ -86,8 +86,8 @@
 
         self->_isCapturing = NO;
 
-        if (self.delegate && [self.delegate respondsToSelector:@selector(snapshootHandler:didFinish:forView:)]) {
-            [self.delegate snapshootHandler:self didFinish:snapshootImage forView:self->_captureView];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(snapshotHandler:didFinish:forView:)]) {
+            [self.delegate snapshotHandler:self didFinish:snapshotImage forView:self->_captureView];
         }
     }];
 }
@@ -112,7 +112,7 @@
 
 #pragma mark - UIScrollView
 
-- (void)snapshootForScrollView:(UIScrollView *)scrollView
+- (void)snapshotForScrollView:(UIScrollView *)scrollView
 {
     CGPoint currentOffset = scrollView.contentOffset;
     CGRect currentFrame = scrollView.frame;
@@ -122,14 +122,14 @@
 
     UIGraphicsBeginImageContextWithOptions(scrollView.contentSize, YES, UIScreen.mainScreen.scale);
     [scrollView.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *snapshootImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
 
     scrollView.contentOffset = currentOffset;
     scrollView.frame = currentFrame;
 
-    if (self.delegate && [self.delegate respondsToSelector:@selector(snapshootHandler:didFinish:forView:)]) {
-        [self.delegate snapshootHandler:self didFinish:snapshootImage forView:_captureView];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(snapshotHandler:didFinish:forView:)]) {
+        [self.delegate snapshotHandler:self didFinish:snapshotImage forView:_captureView];
     }
 }
 
