@@ -1,6 +1,8 @@
 # PPSnapshotKit
 对应的教程在这儿：[iOS 截图的那些事儿](https://www.jianshu.com/p/3327ffeb7fa5)
 
+![演示](https://upload-images.jianshu.io/upload_images/698554-219189e2ec87b171.GIF?imageMogr2/auto-orient/strip)
+
 
 
 ### 安装
