@@ -13,7 +13,6 @@
 		AD1A195020C27930000270FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1A194620C27930000270FB /* LaunchScreen.storyboard */; };
 		AD1A195120C27930000270FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194820C27930000270FB /* main.m */; };
 		AD1A195220C27930000270FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194920C27930000270FB /* AppDelegate.m */; };
-		AD1A195320C27930000270FB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD1A194A20C27930000270FB /* Info.plist */; };
 		AD1A195420C27930000270FB /* PPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194B20C27930000270FB /* PPMainViewController.m */; };
 		AD1A195520C27930000270FB /* PPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A194C20C27930000270FB /* PPImageViewController.m */; };
 		AD1A195B20C27996000270FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1A195920C27996000270FB /* Main.storyboard */; };
@@ -162,7 +161,6 @@
 			files = (
 				AD1A194F20C27930000270FB /* Assets.xcassets in Resources */,
 				AD1A195020C27930000270FB /* LaunchScreen.storyboard in Resources */,
-				AD1A195320C27930000270FB /* Info.plist in Resources */,
 				AD1A195B20C27996000270FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
